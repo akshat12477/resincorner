@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Resin Corner</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="resin-drop">
+                <div class="drop-inner"></div>
+            </div>
+            <div class="loader-text">
+                <h3>My Resin Corner</h3>
+                <p>Loading Gallery...</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span>My Resin Corner</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom ms-2" href="contact.html">Get Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="hero-bg">
+            <div id="three-container"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title" data-aos="fade-up">Our Gallery</h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        Explore our collection of handcrafted resin art pieces, each one unique 
+                        and created with passion, precision, and premium materials.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons text-center" data-aos="fade-up">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th me-2"></i>All
+                        </button>
+                        <button class="filter-btn" data-filter="jewelry">
+                            <i class="fas fa-gem me-2"></i>Jewelry
+                        </button>
+                        <button class="filter-btn" data-filter="home-decor">
+                            <i class="fas fa-home me-2"></i>Home Decor
+                        </button>
+                        <button class="filter-btn" data-filter="accessories">
+                            <i class="fas fa-star me-2"></i>Accessories
+                        </button>
+                        <button class="filter-btn" data-filter="custom">
+                            <i class="fas fa-magic me-2"></i>Custom
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="row g-4" id="gallery-grid">
+                <!-- Ocean Wave Tray -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-item product-card" 
+                         data-category="home-decor"
+                         data-title="Ocean Wave Tray"
+                         data-price="$45"
+                         data-description="Beautiful serving tray with ocean-inspired design featuring deep blue resin waves with white foam effects and gold accents."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop" alt="Ocean Wave Tray">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Home Decor</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Ocean Wave Tray</h4>
+                            <p class="product-description">Beautiful serving tray with ocean-inspired design</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: linear-gradient(45deg, #1e40af, #3b82f6);"></span>
+                                <span class="color-dot" style="background: #ffffff;"></span>
+                                <span class="color-dot" style="background: #f59e0b;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$45</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floral Bookmark Set -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item product-card" 
+                         data-category="accessories"
+                         data-title="Floral Bookmark Set"
+                         data-price="$15"
+                         data-description="Set of 3 pressed flower bookmarks preserved in clear resin with gold foil accents. Perfect for book lovers."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1566132285470-36cad53ac0bd?w=600&h=600&fit=crop" alt="Floral Bookmark Set">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Accessories</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Floral Bookmark Set</h4>
+                            <p class="product-description">Pressed flower bookmarks in resin</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: #8b5cf6;"></span>
+                                <span class="color-dot" style="background: #ec4899;"></span>
+                                <span class="color-dot" style="background: #f59e0b;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$15</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galaxy Coasters -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-item product-card" 
+                         data-category="home-decor"
+                         data-title="Galaxy Coasters"
+                         data-price="$28"
+                         data-description="Set of 4 galaxy-themed coasters with swirling purple and black resin, silver glitter, and protective cork backing."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=600&h=600&fit=crop" alt="Galaxy Coasters">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Home Decor</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Galaxy Coasters</h4>
+                            <p class="product-description">Set of 4 galaxy-themed coasters</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: #8b5cf6;"></span>
+                                <span class="color-dot" style="background: #1f2937;"></span>
+                                <span class="color-dot" style="background: #6b7280;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$28</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Golden Leaf Pendant -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-item product-card" 
+                         data-category="jewelry"
+                         data-title="Golden Leaf Pendant"
+                         data-price="$35"
+                         data-description="Real autumn leaf preserved in golden amber resin pendant with sterling silver chain. A unique piece of nature's beauty."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=600&fit=crop" alt="Golden Leaf Pendant">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Jewelry</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Golden Leaf Pendant</h4>
+                            <p class="product-description">Real leaf preserved in golden resin</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: #f59e0b;"></span>
+                                <span class="color-dot" style="background: #22c55e;"></span>
+                                <span class="color-dot" style="background: #fbbf24;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$35</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crystal Ring Holder -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-item product-card" 
+                         data-category="accessories"
+                         data-title="Crystal Ring Holder"
+                         data-price="$22"
+                         data-description="Elegant ring holder with embedded crystals and clear resin. Features multiple slots for rings and a jewelry tray base."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=600&fit=crop" alt="Crystal Ring Holder">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Accessories</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Crystal Ring Holder</h4>
+                            <p class="product-description">Elegant ring holder with embedded crystals</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: rgba(255,255,255,0.8);"></span>
+                                <span class="color-dot" style="background: #8b5cf6;"></span>
+                                <span class="color-dot" style="background: #6b7280;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$22</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beach Memory Box -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-item product-card" 
+                         data-category="custom"
+                         data-title="Beach Memory Box"
+                         data-price="$55"
+                         data-description="Custom memory box with beach elements - sand, shells, and sea glass preserved in layers of blue and clear resin."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=600&fit=crop" alt="Beach Memory Box">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Custom</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Beach Memory Box</h4>
+                            <p class="product-description">Custom memory box with beach elements</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: #3b82f6;"></span>
+                                <span class="color-dot" style="background: #fbbf24;"></span>
+                                <span class="color-dot" style="background: #ffffff;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$55</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with more products... -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="gallery-item product-card" 
+                         data-category="jewelry"
+                         data-title="Butterfly Hair Clip"
+                         data-price="$18"
+                         data-description="Delicate butterfly design hair accessory with iridescent rainbow resin wings and gold-plated base."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&h=600&fit=crop" alt="Butterfly Hair Clip">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Jewelry</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Butterfly Hair Clip</h4>
+                            <p class="product-description">Delicate butterfly design hair accessory</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: linear-gradient(45deg, #ef4444, #8b5cf6, #3b82f6);"></span>
+                                <span class="color-dot" style="background: rgba(255,255,255,0.8);"></span>
+                                <span class="color-dot" style="background: #f59e0b;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$18</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="gallery-item product-card" 
+                         data-category="accessories"
+                         data-title="Marble Effect Keychain"
+                         data-price="$12"
+                         data-description="Marble pattern resin keychain with white and gray swirls and gold-plated key ring attachment."
+                         data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=600&fit=crop" alt="Marble Effect Keychain">
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-search-plus"></i>
+                                    <p>Click to view details</p>
+                                </div>
+                            </div>
+                            <span class="product-badge">Accessories</span>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">Marble Effect Keychain</h4>
+                            <p class="product-description">Marble pattern resin keychain</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background: #ffffff;"></span>
+                                <span class="color-dot" style="background: #6b7280;"></span>
+                                <span class="color-dot" style="background: #f59e0b;"></span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$12</span>
+                                <button class="btn btn-sm btn-outline-primary">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-outline-primary btn-lg" id="load-more">
+                    <i class="fas fa-plus me-2"></i>Load More Pieces
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title" data-aos="fade-up">Don't See What You're Looking For?</h2>
+                    <p class="cta-description" data-aos="fade-up" data-aos-delay="200">
+                        We love creating custom pieces! Get in touch to discuss your unique vision 
+                        and let's bring your dream resin art to life.
+                    </p>
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-magic me-2"></i>
+                            Request Custom Piece
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-envelope me-2"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>My Resin Corner</span>
+                        </div>
+                        <p class="footer-description">
+                            Creating beautiful, unique resin art pieces that capture memories and bring joy to your everyday life.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h5>Categories</h5>
+                        <ul class="footer-links">
+                            <li><a href="gallery.html">Jewelry</a></li>
+                            <li><a href="gallery.html">Home Decor</a></li>
+                            <li><a href="gallery.html">Accessories</a></li>
+                            <li><a href="gallery.html">Custom Orders</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5>Contact Info</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@myresincorner.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123 Artisan Lane, Creative City, CC 12345</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">© 2024 My Resin Corner. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-policies">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

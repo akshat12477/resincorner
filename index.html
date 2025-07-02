@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resin Corner - Handcrafted Resin Art & Creations</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="resin-drop">
+                <div class="drop-inner"></div>
+            </div>
+            <div class="loader-text">
+                <h3>My Resin Corner</h3>
+                <p>Crafting Beautiful Memories...</p>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span>My Resin Corner</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!-- For Add more menu -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div id="three-container"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="badge custom-badge mb-3">✨ Handcrafted with Love</span>
+                        <h1 class="hero-title">
+                            Beautiful
+                            <span class="gradient-text">Resin Art</span>
+                            <span class="block">Creations</span>
+                        </h1>
+                        <p class="hero-description">
+                            Transform your memories and visions into stunning resin art pieces. 
+                            From custom jewelry to home decor, each creation is uniquely yours.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="gallery.html" class="btn btn-primary btn-lg me-3">
+                                Explore Gallery
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <!-- <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                                Get Custom Quote
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="resin-showcase">
+                            <div class="floating-card" data-tilt>
+                                <div class="card-inner">
+                                    <div class="resin-sample sample-1"></div>
+                                </div>
+                            </div>
+                            <div class="floating-card" data-tilt data-aos-delay="400">
+                                <div class="card-inner">
+                                    <div class="resin-sample sample-2"></div>
+                                </div>
+                            </div>
+                            <div class="floating-card" data-tilt data-aos-delay="600">
+                                <div class="card-inner">
+                                    <div class="resin-sample sample-3"></div>
+                                </div>
+                            </div>
+                            <div class="floating-card" data-tilt data-aos-delay="800">
+                                <div class="card-inner">
+                                    <div class="resin-sample sample-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Why Choose My Resin Corner?</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+                        Experience the perfect blend of artistry, quality, and personalization in every piece we create.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Custom Designs</h4>
+                        <p>Unique pieces tailored to your vision and style preferences</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Handcrafted Quality</h4>
+                        <p>Every item is lovingly made with premium materials and attention to detail</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h4>Perfect Gifts</h4>
+                        <p>Meaningful presents that capture memories and emotions beautifully</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Premium Materials</h4>
+                        <p>High-quality epoxy resin and carefully selected elements for lasting beauty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="500">0</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="1000">0</h3>
+                        <p>Pieces Created</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="5">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="99">0</h3>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">What Our Customers Say</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+                        Read genuine reviews from our satisfied customers who've experienced the magic of custom resin art.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Absolutely stunning work! My custom jewelry piece exceeded all expectations."</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar"></div>
+                            <div>
+                                <h5>Sarah Johnson</h5>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Beautiful home decor pieces that become conversation starters. Highly recommend!"</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar"></div>
+                            <div>
+                                <h5>Michael Chen</h5>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The memorial piece was perfect - captured the memory beautifully and brought comfort."</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar"></div>
+                            <div>
+                                <h5>Emma Davis</h5>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title" data-aos="fade-up">Ready to Create Something Beautiful?</h2>
+                    <p class="cta-description" data-aos="fade-up" data-aos-delay="200">
+                        Let's bring your vision to life with a custom resin art piece that's uniquely yours. 
+                        Every creation tells a story – what's yours?
+                    </p>
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-shopping-bag me-2"></i>
+                            Start Your Custom Order
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="gallery.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-users me-2"></i>
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>My Resin Corner</span>
+                        </div>
+                        <p class="footer-description">
+                            Creating beautiful, unique resin art pieces that capture memories and bring joy to your everyday life.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h5>Categories</h5>
+                        <ul class="footer-links">
+                            <li><a href="gallery.html">Jewelry</a></li>
+                            <li><a href="gallery.html">Home Decor</a></li>
+                            <li><a href="gallery.html">Accessories</a></li>
+                            <li><a href="gallery.html">Custom Orders</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5>Contact Info</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:resincorner@gmail.com" style="color: white; text-decoration: none;"><span>resincorner@gmail.com</span></a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+91 9104120346" style="color: white; text-decoration: none;"><span>+91 91041 20346</span></a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Address</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">©<script>document.write(new Date().getFullYear())</script> My Resin Corner. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-policies">
+                        <a href="#">Privacy Policy</a>
+                        <span class="separator">|</span>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
